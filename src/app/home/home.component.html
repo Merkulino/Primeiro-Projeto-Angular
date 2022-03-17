@@ -1,0 +1,65 @@
+
+<style>
+
+  .carousel{
+    margin-bottom: 20%;
+
+  }
+
+  #divFade {
+    font-family:'Quicksand', sans-serif;
+    background-image: linear-gradient(rgba(255,0,0,0), rgba(0,0,0));
+    bottom: 0;
+    right: 0%;
+    left: 0%;
+}
+</style>
+
+<html>
+  <body>
+      
+      <!--MdBootstrap Carousel-->
+      <mdb-carousel [controls]="true" [indicators]="false" class="carousel">
+        
+          <mdb-carousel-item> 
+            <img 
+            src="https://picsum.photos/2400/1080?grayscale"
+            class="d-block w-100"
+            alt="..." (click)="openComponent()"
+            />
+            <div class="carousel-caption d-none d-md-block" id="divFade">
+              <h3>First slide label</h3>
+              <p>Some text hete for exemple.</p>
+            </div>
+          </mdb-carousel-item>
+
+          <mdb-carousel-item>
+            <img 
+              src="https://picsum.photos/2400/1080?grayscale2"
+              class="d-block w-100"
+              alt="..." (click)="openComponent()"
+            />
+            <div class="carousel-caption d-none d-md-block" id="divFade">
+              <h3 style="font-weight: bolder;">Second slide label</h3>
+              <p>Another text here for exemple.</p>
+            </div>
+          </mdb-carousel-item>
+
+          <mdb-carousel-item>
+            <img 
+              src="https://picsum.photos/2400/1080?grayscale3"
+              class="d-block w-100"
+              alt="..." (click)="openComponent()"
+            />
+            <div class="carousel-caption d-none d-md-block" id="divFade">
+              <h3>Third slide label</h3>
+              <p>Another text here for exemple.</p>
+            </div>
+          </mdb-carousel-item>
+
+        </mdb-carousel>
+    
+      <router-outlet></router-outlet>
+
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+  <br>
+  <h1>{{username}}</h1>
+
+  <!--Simple HTML form-->
+  <body>
+    
+      <form>
+        <div class="flex-container">
+          <div class="flex-child ">
+          
+            <div class="form-group">
+              <label class="col-sm-2 col-form-label">Usuario:</label>
+              <label > {{ username }} </label>
+            </div>
+            <br>
+    
+            <div class="form-group">
+              <label class="col-sm-2 col-form-label">Nome:</label>
+              <label > {{ nomeUser }} </label>
+            </div>
+            <br>
+    
+            <div class="form-group">    
+              <label class="col-sm-2 col-form-label">Email:</label>
+              <label > {{ email }} </label>
+            </div>
+            <br>
+    
+            <div class="form-group">    
+              <label class="col-sm-2 col-form-label">Senha:</label>
+              <label > {{ senha }} </label>
+              <button type="submit" class="btn btn-primary" style="margin-left: 50px;" (click)="verSenha()"> {{verSenhaTxt}}</button>
+            </div>
+            <br>
+    
+            <br>
+            <button type="submit" class="btn btn-primary" routerLink="/userData/edit">Editar</button>
+    
+          </div>
+          
+          <div class="flex-child ">
+            <router-outlet></router-outlet>
+          </div>  
+    
+        </div>
+      </form>
+
+  </body>
+  
+</html>

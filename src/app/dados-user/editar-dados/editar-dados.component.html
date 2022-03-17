@@ -1,0 +1,44 @@
+<!-- Simple form using reactive forms and bootstrap class-->
+<html>
+
+    <form [formGroup]="formulario" (ngsubmit)="onSubmit()">
+        <div class="float-container">
+            <div class="float-child">
+            <div class="blue">
+
+            <!--Angular Directive (ngIf) to input validation-->    
+            <div class="form-group">
+                <input type="user" class="form-control" formControlName="user" placeholder="Username">
+                <div *ngIf="verify('user')" style="color: red;"> Username invalido </div>
+
+            </div> <br> 
+
+            <div class="form-group">
+                <input type="user" class="form-control" formControlName="nome" placeholder="Nome Completo">
+                <div *ngIf="verify('nome')" style="color: red;"> Nome invalido </div>
+            </div> <br>
+
+            <div class="form-group">
+                <input type="email" class="form-control" formControlName="email" placeholder="email@exemple.com">
+                <div *ngIf="verify('email')" style="color: red;"> Email invalido </div>
+            </div> <br>
+
+            <div class="form-group">
+                <input type="password" class="form-control" formControlName="senha" placeholder="Senha">
+            </div>
+            
+            <div class="form-group">
+                <input type="password" class="form-control" formControlName="senha2" placeholder="Confirmar Senha">
+                <div *ngIf="verify('senha' || 'senha2')" style="color: red;"> Senha necessaria </div>
+            </div>
+
+        
+        <br>
+        <button type="submit" class="btn btn-primary" (click)="onSubmit()">Atualizar Dados</button>
+
+            </div>
+            </div>
+        </div>
+
+    </form>
+</html>    

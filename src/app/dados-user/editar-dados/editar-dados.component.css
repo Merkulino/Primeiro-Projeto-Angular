@@ -1,0 +1,8 @@
+.float-container{
+    position: fixed;
+    width:fit-content;
+    height: fit-content;
+    padding: 5%;
+    border-radius: 3%;
+    border: 2px solid #4db6ac;
+    }

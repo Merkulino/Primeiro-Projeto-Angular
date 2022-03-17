@@ -1,27 +1,32 @@
-# Projeto
+# Primeiro Projeto Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+Um projeto web simples utilizando **Angular**[^1]
 
-## Development server
+Esse foi o meu **primeiro contato com o Framework Angular**, esse projeto foi desenvolvido durante uma mentoria
+em um processo seletivo da empresa Viasoft Korp ERP, como base de estudo, fiz um curso de Angular gratuito na plataforma [Loiane.training](https://loiane.training/), produzido pela desenvolvedora e engenheira de software Loiane Groner[^2].
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+A aplicação em questão é um sistema simples de login, alteração de dados de usuario e navegações entre rotas. Utilizei conceitos basicos do Angular como **Data Binding, Diretivas, Serviços, Rotas (Utilizando LazyLoading) e Formularios Reativos**. Tambem foi utilizado o framework de Front-End **Bootstrap**, fora as tecnologias basicas de desenvolvimento web como **TypeScipt, HTML e CSS** sem muitas sofisticações pois o foco foi o aprendizado em Angular. 
 
-## Code scaffolding
+## Tecnologias utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular
+- TypeSript
+- HTML
+- CSS
+- Bootstrap
 
-## Build
+## Autor
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+**Melqui Brito de Jesus**
 
-## Running unit tests
+Linkedin: https://www.linkedin.com/in/melqui-brito-871676188/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Telegram: https://t.me/Merkulino
 
-## Running end-to-end tests
+Email: Merkulino11@gmail.com
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+:shipit: :shipit: :shipit: 
 
-## Further help
+[^1]: This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[^2]: https://github.com/loiane
